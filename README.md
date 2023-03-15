@@ -80,8 +80,6 @@ data:
 
 When you are done with modifications to the aws-auth ConfigMap, you can run `kubectl apply -f auth-auth.yaml`. An example of this manifest file exists in the raw-manifests directory.
 
-For a more in-depth explanation on this, you can read [this post](https://medium.com/swlh/secure-an-amazon-eks-cluster-with-iam-rbac-b78be0cd95c9).
-
 ## Deploy Application
 To deploy a simple application to you cluster, redirect to the directory called raw-manifests and apply the *pod.yaml* and *service.yaml* manifest files to create a Pod and expose the application with a LoadBalancer Service. 
 1. `kubectl apply -f service.yaml`
